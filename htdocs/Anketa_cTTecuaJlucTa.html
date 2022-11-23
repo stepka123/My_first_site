@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <title>Анкета</title>
+    <link rel="stylesheet" href="style1.css" type="text/css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="aps.css" type="text/css" />
+		<link rel="stylesheet" href="forTest.css" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="slide_background.css" type="text/css" />
+		<link rel="stylesheet" href="aps.css" type="text/css" />
+
+		<style>
+      h1 { 
+        text-align:center; 
+      }
+      p.date {
+        text-align:right;
+      }
+      p.main{
+        text-align: justify;
+        margin-top: 50;
+      }
+      p{
+        text-indent:30px;
+      }
+      p.text_int{
+        white-space: normal;
+        tab-size: 100px;
+        text-indent: 20px;
+        text-align: justify-all;
+        margin-left: 20px;
+      }
+
+      A {
+       font-size: 14px; color: red; }
+      A.link1 { 
+        font-size: 12px; color: green; }
+      A.link2 { 
+        font-size: 14px; color: blue; }
+       
+
+        .notice-success {
+  background: #67b11c url("https://cdn.hipwallpaper.com/i/84/49/lfoaNX.jpg") 20px 50% no-repeat;
+  border: 2px solid #467813;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 15px 20px 15px 50px;
+}
+    </style>
+    <script>
+      window.onload = function () {
+        document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 500);
+      }
+    </script>
+     </head>
+  <body>
+    <div class="preloader">
+      <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+        </path>
+      </svg>
+    </div>
+    <div class="notice-success">
+      Приветствуем специалиста!
+    </div>      <p></p>
+      <div class="header-h1">
+        <h1>Заполните анкету</h1>
+      </div>    <form>
+      
+      
+ 
+<form action="" method="POST" autocomplete="on">
+
+
+      <div style="max-width: 500px;  margin-right: auto; padding: 15px;">        
+        <div class="text-field text-field_floating">
+          <input class="text-field__input" type="email" id="name" placeholder="stepka.games@mail.ru">
+          <label class="text-field__label" for="email">ФИО</label>
+        </div>
+       
+        <div class="text-field text-field_floating">
+          <input class="text-field__input" type="email" id="email" placeholder="stepka.games@mail.ru">
+          <label class="text-field__label" for="email">Телефон</label>
+        </div>
+        <div class="text-field text-field_floating">
+          <input class="text-field__input" type="email" id="email" placeholder="stepka.games@mail.ru">
+          <label class="text-field__label" for="email">E-mail</label>
+        </div>
+        <div class="text-field text-field_floating">
+          <input class="text-field__input" type="email" id="email" placeholder="stepka.games@mail.ru">
+          <label class="text-field__label" for="email">Город</label>
+        </div>
+    	</div>
+
+      <div style ="margin-left:100px;padding-top: 50;">
+ <p><b>Пол:</b></p>
+ <label> 
+  <input type="radio" name="asd" checked/>
+  <span></span>
+</label>
+  <label>Мужской
+    <input type="checkbox" name="asd"/>
+    <span></span>
+  </label>
+  <label>Женский
+  <input type="checkbox" name="asd" />
+  <span></span>
+</label>
+
+
+
+
+<div style ="padding-bottom:10; padding-top: 20;">
+  <p>Укажите свои увлечения:</p>
+  <label>Компьютеры
+    <input type="checkbox" name="fruit" checked/>
+    <span></span>
+  </label>
+  <label>Литература
+    <input type="checkbox" name="fruit" />
+    <span></span>
+  </label>
+  <label>Музыка
+    <input type="checkbox" name="fruit" />
+    <span></span>
+  </label>  
+  <label>Автомобили
+    <input type="checkbox" name="fruit" />
+    <span></span>
+  </label> 
+  <label>Спорт
+    <input type="checkbox" name="fruit" />
+    <span></span>
+  </label> 
+  <label>WEB-программирование
+    <input type="checkbox" name="fruit" />
+    <span></span>
+  </label> 
+ </div>
+
+ <div style ="padding-bottom:10; padding-top: 20;">
+  <p>Стаж деятельности:</p>
+  <label> Никогда
+    <input type="radio" name="asd" checked/>
+    <span></span>
+  </label>
+  <label>1 - 2 года
+    <input type="radio" name="asd" />
+    <span></span>
+  </label>
+  <label>2 - 6 лет
+    <input type="radio" name="asd" />
+    <span></span>
+  </label>  
+  <label>Более 6 лет
+    <input type="radio" name="asd" />
+    <span></span>
+  </label> 
+ </div>
+</div>
+
+ 
+
+                      <BR> Расскажите о себе: <BR> 
+                        <textarea placeholder="Comment..."></textarea>
+                      
+</form>
+<!-- Первая картинка(анимация) -->
+<a href="index.html" type="submit">
+<div id="axis" class="five">
+  <img class="object plane move-ne"/>
+  <div class="hover-text-one">
+    <figure class="effect-text-three">
+      <img src="img/123.jpg" alt=""/>
+        <figcaption>
+    <h3>Безопасность завист от тебя самого</h3>
+		<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        </figcaption>			
+    </figure>
+  </div>
+  </div>
+</a>
+
+</body>
+</html>

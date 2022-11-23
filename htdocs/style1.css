@@ -1,0 +1,580 @@
+.knopka01 {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(241, 0, 0, 0.2), 0 -1px rgba(0,0,0,.8);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background: rgb(0, 204, 223) radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
+  box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(90, 90, 90, 0.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+  color: rgb(0,79,86);
+  user-select: none;
+} 
+.knopka01:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.knopka01:active {
+  padding-bottom: 1px;
+  box-shadow:
+   inset rgba(0,0,0,1) 0 1px 3px,
+   inset rgba(0,0,0,.6) 0 -2px 5px,
+   inset rgba(1, 255, 255, 0.7) 0 2px 5px,
+   0 1px rgba(255,255,255,.08);
+  color: rgba(0, 156, 170, 0.658);
+}
+
+a.button9 {
+  position: relative;
+  display: inline-block;
+  color: #f8a500;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: rgba(231, 219, 219, 0.5) 4px 4px, rgba(0, 0, 0, 0.3) 5px 10px 5px;
+  user-select: none;
+  padding: 1em 2em;
+  outline: none;
+  border-radius: 10px / 100%;
+  background-image:
+   linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+   linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+  background-repeat: no-repeat;
+  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+  box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+}
+a.button9:hover {
+  transition: .5s linear;
+  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+a.button9:active {
+  top: 1px;
+}
+h1 { 
+  text-align:left;
+}
+
+
+
+
+/************************************************************************************/
+/*анимация картинки при наведении*/
+/* Общие стили */
+*, *:after, *:before { 
+	border-box; 
+	box-sizing: border-box; 
+}
+.clearfix:before, .clearfix:after { 
+	content: ''; 
+	display: table; 
+}
+.clearfix:after { 
+	clear: both; 
+}
+.hover-text-one {
+	overflow: hidden;
+	margin: 100;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	background: #020505;
+	text-align: center;
+	cursor: pointer;
+}
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.hover-text-one figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.hover-text-one figure h3 span {
+	font-weight: 800;
+}
+.hover-text-one figure h3,
+.hover-text-one figure p {
+	margin: 0;
+}
+.hover-text-one figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Эффект при наведении */
+figure.effect-text-three {
+	background: #57569c;
+}
+figure.effect-text-three img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(1.1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+figure.effect-text-three:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-text-three figcaption {
+	text-align: left;
+}
+figure.effect-text-three h3 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+figure.effect-text-three h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+figure.effect-text-three:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-text-three p {
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+figure.effect-text-three:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+#axis:hover .move-ne {
+  transform: translate(350px,-350px);
+  -webkit-transform: translate(350px,-350px);
+  -o-transform: translate(350px,-350px);
+  -moz-transform: translate(350px,-350px);
+}
+   
+/*****************************************************************************************************/
+/*Стидизация чекбоксов*/
+body {
+  margin:30px;
+  font-size:18px;
+}
+
+/* container */
+label {
+  position: relative; /* to contain absolute elements */
+  padding-left:30px; /* free space for custom checkbox */
+  cursor: pointer;
+}
+/* hide default checkbox  */
+label input[type=checkbox] {
+  position: absolute; /* prevent taking any space */
+  /* cross-browser hidingg */
+  opactiy: 0;
+  width:0; 
+  height:0;
+}
+/* custom checkbox */
+label span {
+  position: absolute;
+  /* position to the free space in <label> */
+  top:0;
+  left:0;
+  width:20px; 
+  height:20px;
+  background-color: #ddd;
+  transition: .3s background-color; /* slight transition */
+}
+/* the check icon */
+label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+  /* check icon */
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(50deg);
+}
+label:hover span {
+  background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+label input:checked ~ span {
+  background-color: #2eaadc;
+}
+label input:checked ~ span:after {
+  display:block;
+}
+
+
+/*****************************************************************************************************/
+/*Стидизация форм*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 500;
+}
+
+/* text field */
+.text-field {
+  margin-bottom: 1rem;
+}
+
+.text-field__label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.text-field__input {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.text-field__input[type="search"]::-webkit-search-decoration,
+.text-field__input[type="search"]::-webkit-search-cancel-button,
+.text-field__input[type="search"]::-webkit-search-results-button,
+.text-field__input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.text-field__input::placeholder {
+  color: #212529;
+  opacity: 0.4;
+}
+
+.text-field__input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.text-field__input:disabled,
+.text-field__input[readonly] {
+  background-color: #f5f5f5;
+  opacity: 1;
+}
+
+/* with floating label */
+.text-field_floating {
+  position: relative;
+}
+
+.text-field_floating .text-field__input {
+  height: calc(3.5rem + 2px);
+  line-height: 1.25;
+  padding: 1rem 0.75rem;
+}
+
+.text-field_floating .text-field__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem .75rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity .15s ease-in-out, transform .15s ease-in-out;
+}
+
+.text-field_floating .text-field__input::-moz-placeholder {
+  color: transparent;
+}
+
+.text-field_floating .text-field__input::placeholder {
+  color: transparent;
+}
+
+.text-field_floating .text-field__input:focus,
+.text-field_floating .text-field__input:not(:placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: .625rem;
+}
+
+.text-field_floating .text-field__input:focus~.text-field__label,
+.text-field_floating .text-field__input:not(:placeholder-shown)~.text-field__label {
+  opacity: .65;
+  transform: scale(.85) translateY(-.75rem) translateX(.15rem);
+}
+
+/*****************************************************************************************************/
+/*Стилизация радиокнопок*/
+body {*
+  margin:30px;
+  font-size:18px;
+}
+
+/* container */
+label {
+  display:block;
+  margin-bottom:4px;
+  position: relative; /* to contain absolute elements */
+  padding-left:30px; /* free space for custom radio button */
+  cursor: pointer;
+}
+/* hide default radio button  */
+label input[type=radio] {
+  position: absolute; /* prevent taking any space */
+  /* cross-browser hidingg */
+  opactiy: 0;
+  width:0; 
+  height:0;
+}
+/* custom radio button */
+label span {
+  position: absolute;
+  /* position to the free space in <label> */
+  top:0;
+  left:0;
+  width:20px; 
+  height:20px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: .3s background-color; /* slight transition */
+}
+/* the check icon */
+label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+  /* middle */
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color:#fff;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+}
+label:hover span {
+  background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+label input:checked ~ span {
+  background-color: #6e083b;
+}
+label input:checked ~ span:after {
+  display:block;
+}
+*/
+
+
+
+
+
+/*****************************************************************************************************/
+/*Стилизация кнопок*/
+a.glo{
+  color:#00c6ff;
+  padding: 10px 40px;
+  width:165px;
+  text-decoration:none;
+  text-align:center;
+  margin:20px auto;
+  display: block;
+  background-image: linear-gradient(to left,transparent,transparent 50%,#00c6ff 50%,#00c6ff);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  font: 400 18px tahoma;
+  border: 1px solid #00C6FF;
+ }
+ a.glo:hover {
+ background-position: 0 0;
+ color:#fff;
+ }
+
+/*****************************************************************************************************/
+/*Стилизация текстовой области*/
+
+ * {
+  box-sizing:border-box;
+}
+body {
+  margin:20px;
+  background-color: #fafafa;
+}
+textarea {
+  width:100%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+}
+
+
+/*стилизация заголовка*/
+.header-h1 {
+  position: relative;
+  margin-bottom: .5rem;
+}
+.header-h1::after {
+  content: "";
+  position: absolute;
+  border-top: 2px solid #1100ff;
+  border-bottom: 2px solid #00f853;
+  height: .350rem;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: -999;
+}
+.header-h1 h1 {
+  font-size: 1.5rem;
+  color: #000000;
+  display: inline-block;
+  background: rgb(255, 255, 255);
+  margin-bottom: 0;
+  padding-right: 1rem;
+  text-transform: uppercase;
+}
+.header-h1-center {
+  text-align: center;
+}
+.header-h1-center h1 {
+  padding-left: 1rem;
+}
+.header-h1-right {
+  text-align: right;
+}
+.header-h1-right h1 {
+  padding-left: 1rem;
+  padding-right: 0;
+}
+
+/*****************************************************************************************************/
+/*Стилизация прелоудера*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /* фоновый цвет */
+  background: #e0e0e0;
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 0.8s infinite linear;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 1.5s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
